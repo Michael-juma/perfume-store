@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESSENCE | Premium Perfumes & Fragrances</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="index.html">ESSENCE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Categories</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="category.html?category=women">Women</a></li>
+              <li><a class="dropdown-item" href="category.html?category=men">Men</a></li>
+              <li><a class="dropdown-item" href="category.html?category=unisex">Unisex</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <div class="d-flex">
+            <input class="form-control me-2 search-input d-none" type="search" placeholder="Search...">
+            <button class="btn btn-link text-dark p-0 search-toggle"><i class="fas fa-search"></i></button>
+          </div>
+          <a href="wishlist.html" class="btn btn-link text-dark p-0"><i class="fas fa-heart"></i></a>
+          <div class="dropdown">
+            <button class="btn btn-link text-dark p-0" type="button" data-bs-toggle="dropdown"><i class="fas fa-user"></i></button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="login.html">Login</a></li>
+              <li><a class="dropdown-item" href="register.html">Register</a></li>
+              <li><a class="dropdown-item" href="account.html">My Account</a></li>
+              <li><a class="dropdown-item" href="orders.html">My Orders</a></li>
+            </ul>
+          </div>
+          <a href="cart.html" class="btn btn-link text-dark p-0 position-relative">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section position-relative">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.pexels.com/photos/1190829/pexels-photo-1190829.jpeg?auto=compress&cs=tinysrgb&w=600" class="d-block w-100" alt="Discover Your Signature Scent">
+          <div class="carousel-caption text-center">
+            <h1 class="display-4 fw-bold">Discover Your Signature Scent</h1>
+            <p class="lead">Explore our collection of premium fragrances crafted by master perfumers</p>
+            <a href="shop.html" class="btn btn-primary btn-lg mt-3">Shop Now</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.pexels.com/photos/1961795/pexels-photo-1961795.jpeg?auto=compress&cs=tinysrgb&w=600" class="d-block w-100" alt="New Arrivals">
+          <div class="carousel-caption text-center">
+            <h1 class="display-4 fw-bold">New Arrivals</h1>
+            <p class="lead">Be the first to experience our latest fragrance collections</p>
+            <a href="shop.html" class="btn btn-primary btn-lg mt-3">View Collection</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.pexels.com/photos/1961791/pexels-photo-1961791.jpeg?auto=compress&cs=tinysrgb&w=600" class="d-block w-100" alt="Exclusive Offers">
+          <div class="carousel-caption text-center">
+            <h1 class="display-4 fw-bold">Exclusive Offers</h1>
+            <p class="lead">Limited time deals on our most popular scents</p>
+            <a href="shop.html" class="btn btn-primary btn-lg mt-3">See Offers</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-6 fw-bold">Discover Our Collection</h2>
+        <p class="text-muted">Explore our curated selection of premium fragrances from around the world.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="category-card position-relative overflow-hidden rounded">
+            <img src="https://images.pexels.com/photos/258244/pexels-photo-258244.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Women's Perfumes" class="img-fluid w-100">
+            <div class="category-overlay d-flex flex-column align-items-center justify-content-center">
+              <h3 class="text-white fw-bold mb-3">For Her</h3>
+              <a href="category.html?category=women" class="btn btn-outline-light">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="category-card position-relative overflow-hidden rounded">
+            <img src="https://images.pexels.com/photos/965993/pexels-photo-965993.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Men's Perfumes" class="img-fluid w-100">
+            <div class="category-overlay d-flex flex-column align-items-center justify-content-center">
+              <h3 class="text-white fw-bold mb-3">For Him</h3>
+              <a href="category.html?category=men" class="btn btn-outline-light">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="category-card position-relative overflow-hidden rounded">
+            <img src="https://images.pexels.com/photos/136651/pexels-photo-136651.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Unisex Perfumes" class="img-fluid w-100">
+            <div class="category-overlay d-flex flex-column align-items-center justify-content-center">
+              <h3 class="text-white fw-bold mb-3">Unisex</h3>
+              <a href="category.html?category=unisex" class="btn btn-outline-light">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="display-6 fw-bold">Featured Products</h2>
+        <a href="shop.html" class="btn btn-outline-dark">View All</a>
+      </div>
+      <div class="row g-4 featured-products">
+        <!-- Products will be loaded dynamically with JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Showcase -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-6 fw-bold">Shop by Category</h2>
+        <p class="text-muted">Find the perfect fragrance for any occasion</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm category-showcase">
+            <img src="https://images.pexels.com/photos/3865676/pexels-photo-3865676.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Women's Fragrances">
+            <div class="card-body">
+              <h3 class="card-title">Women's Fragrances</h3>
+              <p class="card-text text-muted">Elegant and captivating scents designed for her</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-muted small">42 Products</span>
+                <a href="category.html?category=women" class="btn btn-sm btn-outline-dark">Explore</a>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm category-showcase">
+            <img src="https://images.pexels.com/photos/1961794/pexels-photo-1961794.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Men's Fragrances">
+            <div class="card-body">
+              <h3 class="card-title">Men's Fragrances</h3>
+              <p class="card-text text-muted">Bold and sophisticated scents crafted for him</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-muted small">38 Products</span>
+                <a href="category.html?category=men" class="btn btn-sm btn-outline-dark">Explore</a>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm category-showcase">
+            <img src="https://images.pexels.com/photos/1190829/pexels-photo-1190829.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Unisex Fragrances">
+            <div class="card-body">
+              <h3 class="card-title">Unisex Fragrances</h3>
+              <p class="card-text text-muted">Versatile scents that transcend traditional boundaries</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-muted small">24 Products</span>
+                <a href="category.html?category=unisex" class="btn btn-sm btn-outline-dark">Explore</a>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-5">  
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-6 fw-bold">What Our Customers Say</h2>
+        <p class="text-muted">Discover why people love our fragrances</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <div class="mb-3 text-primary"><i class="fas fa-quote-left fa-2x opacity-25"></i></div>
+            <p class="card-text mb-4">I've tried countless perfumes over the years, but the selection here is truly exceptional. The Midnight Bloom has become my signature scent!</p>
+            <div class="d-flex align-items-center">
+              <img src="https://images.pexels.com/photos/258244/pexels-photo-258244.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sarah Johnson" class="rounded-circle me-3" width="48">
+              <div><h5 class="mb-0">Sarah Johnson</h5><p class="text-muted small mb-0">Fashion Blogger</p></div>
+            </div>
+          </div>  
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <div class="mb-3 text-primary"><i class="fas fa-quote-left fa-2x opacity-25"></i></div>
+            <p class="card-text mb-4">The quality of fragrances available is outstanding. Customer service was excellent and helped me find the perfect scent for my preferences.</p>
+            <div class="d-flex align-items-center">
+              <img src="https://images.pexels.com/photos/965993/pexels-photo-965993.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Michael Chen" class="rounded-circle me-3" width="48">
+              <div><h5 class="mb-0">Michael Chen</h5><p class="text-muted small mb-0">Fragrance Enthusiast</p></div>
+            </div>
+          </div>  
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-4">
+            <div class="mb-3 text-primary"><i class="fas fa-quote-left fa-2x opacity-25"></i></div>
+            <p class="card-text mb-4">Not only do they have amazing personal fragrances, but their home scents have transformed my living space. Highly recommend!</p>
+            <div class="d-flex align-items-center">
+              <img src="https://images.pexels.com/photos/136651/pexels-photo-136651.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Emma Rodriguez" class="rounded-circle me-3" width="48">
+              <div><h5 class="mb-0">Emma Rodriguez</h5><p class="text-muted small mb-0">Interior Designer</p></div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="display-6 fw-bold">Join Our Newsletter</h2>
+      <p class="text-muted mx-auto" style="max-width: 500px;">Subscribe to receive updates on new arrivals, special offers and other discount information.</p>
+      <form class="d-flex justify-content-center mt-4">
+        <div class="input-group" style="max-width: 500px;">
+          <input type="email" class="form-control" placeholder="Your email address" required>
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Footer Columns -->
+      </div>
+      <hr class="my-4">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start"><p class="text-muted small mb-md-0">&copy; <span id="currentYear"></span> ESSENCE. All rights reserved.</p></div>
+        <div class="col-md-6 text-center text-md-end">
+          <img src="https://placehold.co/50x30" alt="Visa" class="payment-icon">
+          <img src="https://placehold.co/50x30" alt="Mastercard" class="payment-icon">
+          <img src="https://placehold.co/50x30" alt="PayPal" class="payment-icon">
+          <img src="https://placehold.co/50x30" alt="Apple Pay" class="payment-icon">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS & Custom Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
